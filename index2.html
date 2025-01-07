@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syahrill's Personal Website</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-user"></i> About</a>
+        <a href="#"><i class="fas fa-cogs"></i> Services</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+
+    <!-- Main content -->
+    <div id="main">
+        <!-- Hamburger icon for toggling sidebar -->
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+        <header>
+            <h1>This is my first personal website</h1>
+        </header>
+
+        <footer>
+            <p>&copy; 2025 - <span id="currentYear"></span><br>Designed by Syahrill</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript to handle year update and sidebar toggle -->
+    <script>
+        // Update the year automatically
+        const year = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = year;
+
+        // Function to open the sidebar
+        function openNav() {
+            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        // Function to close the sidebar
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>
