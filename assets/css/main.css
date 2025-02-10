@@ -3878,10 +3878,29 @@ input, select, textarea {
 /* Company Logo */
 
 		.company-logo {
-			width: 50px; /* Adjust logo size as needed */
+			width: 104px; /* Adjust logo size as needed */
 			height: auto;
 			margin-right: 15px; /* Space between logo and text */
 			vertical-align: middle; /* Align the logo with the text */
+			background-color: #ffffff;
 		}
+
+/* Skill Tag */
+
+		.skill-tags {
+			margin-top: 10px;
+		}
+		
+		.skill-tags .tag {
+			display: inline-block;
+			background-color: #f5c518; /* Gold color for tags */
+			color: #000; /* Black text */
+			padding: 5px 10px;
+			font-size: 14px;
+			border-radius: 15px;
+			margin-right: 5px;
+			margin-bottom: 5px;
+		}
+		
 		
 		
